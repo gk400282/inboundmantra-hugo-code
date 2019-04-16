@@ -1,0 +1,33 @@
+{{ if .Site.Params.partner.enable }}
+    {{"<!-- partner Section -->" | safeHTML}}
+    <section id="partner" class="partner section">
+        <div class="container">
+            <div class="row">
+                <div class="heading">
+                    {{ with .Site.Params.partner.title }}
+                        <h2>{{ . }}</h2>
+                    {{ end }}
+                    {{ range .Site.Params.partner.subtitle }}
+                        <p>{{ .subtitleText }}</p>
+                    {{ end }}
+                </div>
+                {{ range .Site.Params.partner.partnerItem }}
+                    <div class="col-sm-6 col-md-3 partnerItem" data-wow-delay="{{ .delay }}">
+                        <div class="block">
+                            <div class="flex flex-row end justify-center flex-no-wrap blockHeader">
+                                <i class="{{ .icon }}" style="color:{{ .iconColor }};"></i>
+                                <h2><strong>{{ upper .name }}</strong></h2>
+                            </div>
+                            <p>{{ upper .description }}</p>
+                        </div>
+                    </div>
+                {{ end }}
+                {{ with .Site.Params.partner.btnText }}
+                    <a class="btn btn-home" href="#{{ replace . " " "" }}" role="button">
+                        {{ upper . }}
+                    </a>
+                {{ end }}
+            </div>
+        </div>
+    </section>
+{{ end }}

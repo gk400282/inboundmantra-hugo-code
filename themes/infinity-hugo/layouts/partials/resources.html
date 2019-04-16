@@ -1,0 +1,32 @@
+{{ if .Site.Params.resources.enable }}
+    {{"<!-- Service Section -->" | safeHTML}}
+    <section id="resources" class="resources section">
+        <div class="container">
+            <div class="row flex flex-column center">
+                <div class="heading">
+                    {{ with .Site.Params.resources.title }}
+                        <h2>{{ . }}</h2>
+                    {{ end }}
+                    {{ with .Site.Params.resources.subtitle }}
+                        <p>{{ . }}</p>
+                    {{ end }}
+                </div>
+                <div class="flex flex-row center flex-wrap justify-center">
+                {{ range .Site.Params.resources.resource }}
+
+                    <div class="card bg-dark text-white">
+                        <img src="{{ .image }}" class="card-img" alt="...">
+                        <div class="card-img-overlay flex flex-column end justify-center">
+                            <h3 class="card-title">{{ .name }}</h3>
+                            <a class="btn btn-home" href="#{{ replace .btnText " " ""}}" role="button">
+                                    {{ upper .btnText }}
+                            </a>
+                        </div>
+                    </div>
+
+                {{ end }}
+                </div>
+            </div>
+        </div>
+    </section>
+{{ end }}

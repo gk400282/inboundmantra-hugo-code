@@ -1,0 +1,388 @@
+baseURL = "https://gk400282.github.io/inboundmantra-hugo/"
+languageCode = "en-us"
+title = "Partner a HubSpot Inbound Marketing Agency in India | Inbound Mantra"
+theme = "infinity-hugo"
+titleLogo  = "images/title-logo.png"
+
+[params]
+
+    # Navigation
+    [params.navigation]
+        enable = true
+        logo = "images/Inbound-mantra-logo.png"
+        hubspot = "Hubspot"
+        definition = "What we do"
+        about = "About"
+        work = "Our Work"
+        resource = "Resources"
+
+    # Hero Area
+    [params.hero]
+        enable      = true
+        bg          = "images/Black-Layer-Gif-for-Banner.gif"
+        title       = "Acquire more Customers"
+        subtitle    = "Partner with a Hubspot Inbound Marketing Agency"
+        btnText1    = "Contact"
+        btnText2    = "Know more"
+        countdownYear = "2019"
+        countdownMonth = "12"
+        countdownDay  = "27"
+
+    # About Section
+    [params.about]
+        enable      = false
+        heading     = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ipsa recusandae consequatur veniam, reiciendis odit quia eaque vel eius a."
+        description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla-mco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, aspernatur."
+
+        [[params.about.sliderItem]]
+            image   = "images/about/1.jpg"
+        [[params.about.sliderItem]]
+            image   = "images/about/2.jpg"
+        [[params.about.sliderItem]]
+            image   = "images/about/3.jpg"
+        [[params.about.sliderItem]]
+            image   = "images/about/2.jpg"
+
+
+    # Service Section
+    [params.service]
+        enable      = true
+        title       = "Services"
+        [[params.service.serviceItem]]
+            # give icon(themefisher icon font), title, description
+            # more about themefisher icon font visit https://github.com/themefisher/themefisher-font
+            # use delay for reveal items one by one
+            icon    = "tf-strategy"
+            title   = "Inbound Marketing"
+            description = "Are you looking for a full service ROI focused Inbound Marketing agency?"
+            delay   = "0s"
+
+        [[params.service.serviceItem]]
+            # give icon(themefisher icon font), title, description
+            # more about themefisher icon font visit https://github.com/themefisher/themefisher-font
+            # use delay for reveal items one by one
+            icon    = "tf-circle-compass"
+            title   = "Predictive Lead Scoring"
+            description = "Call only those leads that will close into Customers, thanks to a Machine."
+            delay   = "0.1s"
+
+        [[params.service.serviceItem]]
+            # give icon(themefisher icon font), title, description
+            # more about themefisher icon font visit https://github.com/themefisher/themefisher-font
+            # use delay for reveal items one by one
+            icon    = "tf-anchor2"
+            title   = "Search Engine Optimization"
+            description = "SEO has changed, for the better – On Page, Off Page, Business SEO and Technical"
+            delay   = "0.2s"
+
+        [[params.service.serviceItem]]
+            # give icon(themefisher icon font), title, description
+            # more about themefisher icon font visit https://github.com/themefisher/themefisher-font
+            # use delay for reveal items one by one
+            icon    = "tf-globe"
+            title   = "Hubspot Cos Development"
+            description = "User Friendly Theme Development, Migration, Landing Pages, System pages."
+            delay   = "0.3s"
+
+        [[params.service.serviceItem]]
+            # give icon(themefisher icon font), title, description
+            # more about themefisher icon font visit https://github.com/themefisher/themefisher-font
+            # use delay for reveal items one by one
+            icon    = "tf-strategy"
+            title   = "B2B Lead Generation"
+            description = "Qualified lead generation from all channels – search, social and email"
+            delay   = "0.4s"
+
+        [[params.service.serviceItem]]
+            # give icon(themefisher icon font), title, description
+            # more about themefisher icon font visit https://github.com/themefisher/themefisher-font
+            # use delay for reveal items one by one
+            icon    = "tf-circle-compass"
+            title   = "marketing Automation"
+            description = "Scale your marketing efforts with software and strategy"
+            delay   = "0.5s"
+
+        [[params.service.serviceItem]]
+            # give icon(themefisher icon font), title, description
+            # more about themefisher icon font visit https://github.com/themefisher/themefisher-font
+            # use delay for reveal items one by one
+            icon    = "tf-globe"
+            title   = "Hubspot Services"
+            description = "Implementation or operations; our HubSpot Services make this Inbound marketing software sweat"
+            delay   = "0.6s"
+
+        [[params.service.serviceItem]]
+            # give icon(themefisher icon font), title, description
+            # more about themefisher icon font visit https://github.com/themefisher/themefisher-font
+            # use delay for reveal items one by one
+            icon    = "tf-strategy"
+            title   = "Inbound POC"
+            description = "A proven Proof of Concept inbound marketing intervention for your business"
+            delay   = "0.7s"
+
+        [[params.service.serviceItem]]
+            # give icon(themefisher icon font), title, description
+            # more about themefisher icon font visit https://github.com/themefisher/themefisher-font
+            # use delay for reveal items one by one
+            icon    = "tf-circle-compass"
+            title   = "Demand Generation"
+            description = "In B2B lead generation, Inbound isn’t enough. Thus, PPC, email prospecting …"
+            delay   = "0.8s"
+
+    # Call to Action Section
+    [params.cta]
+        enable      = true
+        bg          = "images/call-to-action.jpg"
+        title       = "What is Inbound Marketing?"
+        subtitle    = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod"
+
+    #Show case section
+    [params.sc]
+        enable      = true
+        title       = "Helping Clients Grow"
+        [[params.sc.beneficiary]]
+            image         = "images/Daniel-Nilsson.jpg"
+            name          = "Daniel Nilsson"
+            designation   = "Chief Commercial Officer"
+            organization  = "APPLAND INC"
+            comment       = "Inbound Mantra have helped us to lift our web page to an entire new level. The design was top notch, they listen to all feedback and come up with solutions, they are fast and they deliver. Best part – They do more than expected. I strongly recommend Inbound Mantra and feel welcome to contact me if you have any questions. Dear Inbound Mantra Team – Thank you! Really appreciate your efforts."
+        [[params.sc.beneficiary]]
+            image         = "images/Daniel-Golub.jpg"
+            name          = "Daniel Golub"
+            designation   = "General Manager"
+            organization  = "HIPPO CMMS"
+            comment       = "We are a fast growing CMMS (Maintenance Software) company that applies the SaaS business model. In our increasing competitve space we need to keep the leads coming in and ensure cost per lead is manageble. Hippo CMMS has worked with 4 SEO consultants over the last 7 years. Inbound Mantra has been by far the best. Unlike other providers in the past who won’t commit to results or say you won’t see anything until 6 months, these guys have show great results in 3 months. The’ve also been instrumental in pushing out our lead scoring, updating our marketing automation, content creation and more. Basically, they are our in house marketing team and work so quickly that it is hard to keep up. They’re awesome."
+
+
+    #Clients section
+    [params.clients]
+        enable = true
+        title  = "Our dear clients"
+        [[params.clients.client]]
+            image = "images/client1.png"
+        [[params.clients.client]]
+            image = "images/client2.png"
+        [[params.clients.client]]
+            image = "images/client3.png"
+        [[params.clients.client]]
+            image = "images/client4.png"
+        [[params.clients.client]]
+            image = "images/client5.png"
+        [[params.clients.client]]
+            image = "images/client6.png"
+        [[params.clients.client]]
+            image = "images/client7.png"
+        [[params.clients.client]]
+            image = "images/client8.png"
+        [[params.clients.client]]
+            image = "images/client9.png"
+        [[params.clients.client]]
+            image = "images/client10.png"
+
+
+    # Download Section
+    [params.download]
+        enable      = true
+        bg          = "images/call-to-action.jpg"
+        title       = "Inbound Marketing Case Studies on SAAS Companies"
+        subtitle    = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod"
+
+    #Resources Section
+    [params.resources]
+        enable      = true
+        title       = "Resources"
+        [[params.resources.resource]]
+            name      = "Blogs"
+            btnText   = "Learn more"
+            image    = "images/blogs.jpg"
+        [[params.resources.resource]]
+            name      = "E-Books"
+            btnText   = "Download at will"
+            image     ="images/ebooks.jpg"
+
+    # Hubspot section
+    [params.hubspot]
+        enable      = true
+        bg          = "images/call-to-action.jpg"
+        title       = "Custom Hubspot COS development?"
+        btnText     = "Talk to us"
+        subtitle    = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod"
+
+    # Partner section
+    [params.partner]
+        enable      = true
+        title       = "Hubspot Partner"
+        btnText     = "Work with us"
+        [[params.partner.subtitle]]
+            subtitleText  = "Inbound Mantra is a proud HubSpot Gold Partner. In addition to spearheading HubSpot’s sales and marketing efforts in India since 2014, this HubSpot Inbound Marketing Agency has serviced HubSpot customers across the world."
+        [[params.partner.subtitle]]
+            subtitleText  = "HubSpot is the world’s largest Inbound Marketing Software platform that helps companies attract visitors, convert leads, and close customers."
+        [[params.partner.partnerItem]]
+            icon          = "fas fa-suitcase"
+            iconColor     = "#f05926"
+            name          = "22"
+            description   = "Hubspot Accounts"
+        [[params.partner.partnerItem]]
+            icon          = "fas fa-flag"
+            iconColor     = "#f05926"
+            name          = "40"
+            description   = "Clients impacted"
+        [[params.partner.partnerItem]]
+            icon          = "fas fa-paper-plane"
+            iconColor     = "#f05926"
+            name          = "400"
+            description   = "Campaigns"
+        [[params.partner.partnerItem]]
+            icon          = "fas fa-magnet"
+            iconColor     = "#f05926"
+            name          = "40,000"
+            description   = "Inbound Leads"
+
+    #blogs section
+    [params.blogs]
+        enable      = true
+        title       = "Hot Blogs"
+        [[params.blogs.blog]]
+            name          = "Are you neglecting Google My Business?"
+            image        = "images/blog1.png"
+            date          = "Apr 8,2019"
+        [[params.blogs.blog]]
+            name          = "What does an Inbound marketer really do?"
+            image        = "images/blog2.png"
+            date          = "Apr 1,2019"
+        [[params.blogs.blog]]
+            name          = "Understanding user psychology is like playing poker…"
+            image        = "images/blog3.jpg"
+            date          = "Mar 25,2019"
+
+    #footer section
+    [params.footer]
+        enable      = true
+        [params.footer.about]
+            image    = "images/footer-ib-icon.png"
+            description = "Inbound Mantra is an enterprise inbound marketing agency that helps businesses build their brand, capture hot leads and grow sales."
+            [[params.footer.about.icons]]
+                icon = "fab fa-facebook-f"
+                link = "#"
+            [[params.footer.about.icons]]
+                icon = "fab fa-twitter"
+                link = "#"
+            [[params.footer.about.icons]]
+                icon = "fas fa-rss"
+                link = "#"
+            [[params.footer.about.icons]]
+                icon = "fab fa-google-plus-g"
+                link = "#"
+            [[params.footer.about.icons]]
+                icon = "fab fa-linkedin-in"
+                link = "#"
+            [[params.footer.about.icons]]
+                icon = "fab fa-pinterest"
+                link = "#"
+            [[params.footer.about.icons]]
+                icon = "fab fa-instagram"
+                link = "#"
+            [[params.footer.about.icons]]
+                icon = "fab fa-youtube"
+                link = "#"
+        [params.footer.contact]
+            name    = "Contact us"
+            [[params.footer.contact.lines]]
+                text  = "Inbound Mantra"
+                link  = "#"
+            [[params.footer.contact.lines]]
+                text  = "259, Block – B1,"
+                link  = "#"
+            [[params.footer.contact.lines]]
+                text  = "Spaze iTech Park, Sector 49,"
+                link  = "#"
+            [[params.footer.contact.lines]]
+                text  = "Gurgaon, Haryana – 122018"
+                link  = "#"
+            [[params.footer.contact.lines]]
+                text  = "Email: raj@inboundmantra.com"
+                link  = "#"
+            [[params.footer.contact.lines]]
+                text  = "Phone: +91-9717240021"
+                link  = "#"
+        [params.footer.links]
+            name    = "Quick Links"
+            [[params.footer.links.link]]
+                text  = "Home"
+                link  = "#"
+            [[params.footer.links.link]]
+                text  = "About us"
+                link  = "#"
+            [[params.footer.links.link]]
+                text  = "Marketing"
+                link  = "#"
+            [[params.footer.links.link]]
+                text  = "Team"
+                link  = "#"
+            [[params.footer.links.link]]
+                text  = "Careers"
+                link  = "#"
+            [[params.footer.links.link]]
+                text  = "Certification"
+                link  = "#"
+            [[params.footer.links.link]]
+                text  = "Blogs"
+                link  = "#"
+            [[params.footer.links.link]]
+                text  = "Privacy Policy"
+                link  = "#"
+            [[params.footer.links.link]]
+                text  = "Terms of use"
+                link  = "#"
+            [[params.footer.links.link]]
+                text  = "Contact us"
+                link  = "#"
+        [[params.footer.options]]
+            name    = "Inbound"
+            [[params.footer.options.option]]
+                link  = "Inbound Agency"
+            [[params.footer.options.option]]
+                link  = "Inbound Marketing Services"
+            [[params.footer.options.option]]
+                link  = "Inbound Marketing Portfolio"
+            [[params.footer.options.option]]
+                link  = "SaaS Marketing"
+            [[params.footer.options.option]]
+                link  = "Inbound Marketing Agency"
+        [[params.footer.options]]
+            name    = "Hubspot"
+            [[params.footer.options.option]]
+                link  = "Hubspot Agency"
+            [[params.footer.options.option]]
+                link  = "Hubspot Agency Partner"
+            [[params.footer.options.option]]
+                link  = "HubSpot Partner"
+            [[params.footer.options.option]]
+                link  = "HubSpot Services"
+            [[params.footer.options.option]]
+                link  = "HubSpot Design Partners"
+        [[params.footer.options]]
+            name    = "Pricing"
+            [[params.footer.options.option]]
+                link  = "HubSpot Partner pricing"
+            [[params.footer.options.option]]
+                link  = "Inbound Marketing Pricing"
+            [[params.footer.options.option]]
+                link  = "HubSpot Partner in India"
+            [[params.footer.options.option]]
+                link  = "HubSpot Integration Partners"
+            [[params.footer.options.option]]
+                link  = "HubSpot Inbound Marketing"
+
+    #inbound section
+    [params.goinbound]
+        enable      = true
+        bg          = "images/call-to-action.jpg"
+        title       = "Yes, take my business, inbound."
+        btnText     = "Contact us"
+        subtitle    = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod"
+
+    [params.contact]
+        enable      = false
+        title       = "Get In Touch"
+        subtitle    = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex"

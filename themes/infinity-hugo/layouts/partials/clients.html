@@ -1,0 +1,26 @@
+{{ if .Site.Params.clients.enable }}
+    {{"<!-- Service Section -->" | safeHTML}}
+    <section id="clients" class="clients section">
+        <div class="container">
+            <div class="row flex flex-column center">
+                <div class="heading">
+                    {{ with .Site.Params.clients.title }}
+                        <h2>{{ . }}</h2>
+                    {{ end }}
+                    {{ with .Site.Params.clients.subtitle }}
+                        <p>{{ . }}</p>
+                    {{ end }}
+                </div>
+                <div class="flex flex-row flex-wrap justify-center">
+                {{ range .Site.Params.clients.client }}
+
+                      <div class="card">
+                        <img class="card-img-top" src="{{.image}}" alt="Card image cap">
+                      </div>
+
+                {{ end }}
+                </div>
+            </div>
+        </div>
+    </section>
+{{ end }}

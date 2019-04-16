@@ -1,0 +1,6 @@
+@media (min-width: 768px) and (max-width: 990px) {
+  .navigation {
+    background: white; }
+  .navigation .navbar-brand {
+      float: none; }
+  }

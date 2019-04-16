@@ -1,0 +1,33 @@
+{{ if .Site.Params.blogs.enable }}
+    {{"<!-- Service Section -->" | safeHTML}}
+    <section id="blogs" class="blogs section">
+        <div class="container">
+            <div class="row flex flex-column center">
+                <div class="heading">
+                    {{ with .Site.Params.blogs.title }}
+                        <h2>{{ . }}</h2>
+                    {{ end }}
+                    {{ with .Site.Params.blogs.subtitle }}
+                        <p>{{ . }}</p>
+                    {{ end }}
+                </div>
+                <div class="flex flex-row center flex-wrap justify-center">
+                {{ range .Site.Params.blogs.blog }}
+
+                      <div class="card">
+                        <img class="card-img-top" src="{{.image}}" alt="Card image cap">
+                        <div class="card-body">
+                          <h3 class="card-title">{{ .name }}</h3>
+                          <p class="card-text"><small class="text-muted">{{ .date }}</small></p>
+                          <a class="btn btn-home" href="#" role="button">
+                                    {{ upper "Read more" }}
+                          </a>
+                        </div>
+                      </div>
+
+                {{ end }}
+                </div>
+            </div>
+        </div>
+    </section>
+{{ end }}

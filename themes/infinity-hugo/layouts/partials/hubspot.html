@@ -1,0 +1,25 @@
+{{ if .Site.Params.hubspot.enable }} {{"<!-- Call To Action Section -->" |safeHTML}}
+<section
+    class="call-to-action call-three"
+    style='background-image: url("{{ with .Site.Params.hubspot.bg }}{{.}}{{ end }}")'
+>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 wow text-center">
+                <div class="block">
+                    {{ with .Site.Params.hubspot.title }}
+                    <h2>{{ upper . }}</h2>
+                    {{ end }}
+                    <div class="col-lg-6 offset-lg-3">
+                        <div class="input-group">
+                            <a class="btn btn-home" href="#Talk" role="button">
+                                {{ upper .Site.Params.hubspot.btnText }}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

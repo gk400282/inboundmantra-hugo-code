@@ -1,0 +1,31 @@
+{{ if .Site.Params.sc.enable }}
+    {{"<!-- Service Section -->" | safeHTML}}
+    <section id="show-case" class="show-case section">
+        <div class="container">
+            <div class="row flex flex-column center">
+                <div class="heading">
+                    {{ with .Site.Params.sc.title }}
+                        <h2>{{ . }}</h2>
+                    {{ end }}
+                    {{ with .Site.Params.sc.subtitle }}
+                        <p>{{ . }}</p>
+                    {{ end }}
+                </div>
+                <div class="card-deck">
+                {{ range .Site.Params.sc.beneficiary }}
+
+                      <div class="card">
+                        <img class="card-img-top" src="{{.image}}" alt="Card image cap">
+                        <div class="card-body">
+                          <h3 class="card-title">{{ .name }}</h3>
+                          <p class="card-text">{{ .designation }} | {{ .organization }}</p>
+                          <p class="card-text"><small class="text-muted">{{ .comment }}</small></p>
+                        </div>
+                      </div>
+
+                {{ end }}
+                </div>
+            </div>
+        </div>
+    </section>
+{{ end }}

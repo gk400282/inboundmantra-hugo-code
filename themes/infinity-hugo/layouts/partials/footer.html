@@ -1,0 +1,86 @@
+{{ if .Site.Params.footer.enable }}
+    {{"<!-- Call To Footer Section -->" | safeHTML}}
+<footer>
+    <div class="container">
+        <div class="row">
+            {{ with .Site.Params.footer.about }}
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="block about">
+                    <div class="flex flex-column">
+                        <img src="{{ .image }}" class="footer-ib-icon">
+                        <p>{{ .description }}</p>
+                        <div class="flex flex-row center justify-left link-wrapper">
+                            {{ range .icons }}
+                                <a href="{{ .link }}">
+                                    <i class="{{ .icon }}" style="color:{{ .iconColor }};"></i>
+                                </a>
+                            {{ end }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+
+            {{ with .Site.Params.footer.contact }}
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="block">
+                    <div class="flex flex-column">
+                        <h3>{{ .name }}</h3>
+                        {{ range .lines }}
+                            <a href="{{ .link }}"><p> {{ .text }}</p></a>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+
+            {{ with .Site.Params.footer.links }}
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="block links">
+                    <div class="flex flex-column">
+                        <h3>{{ .name }}</h3>
+                        <div class="flex flex-row flex-wrap center">
+                        {{ range .link }}
+                            <a href="{{ .link }}"><p> {{ .text }}</p></a>
+                        {{ end }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+
+            {{ range .Site.Params.footer.options }}
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="block">
+                    <div class="flex flex-column">
+                        <h3>{{ .name }}</h3>
+                        {{ range .option }}
+                            <a href="#"><p> {{ .link }}</p></a>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+
+        </div>
+    </div>
+</footer>
+{{ end }}
+
+
+{{"<!-- Js -->" | safeHTML}}
+<script src="{{"js/vendor/jquery-2.1.1.min.js" | absURL}}"></script>
+<script src="{{"js/bootstrap.min.js" | absURL}}"></script>
+<script src="{{"js/vendor/modernizr-2.6.2.min.js" | absURL}}"></script>
+<script src="{{"js/jquery.lwtCountdown-1.0.js" | absURL}}"></script>
+<script src="{{"js/owl.carousel.min.js" | absURL}}"></script>
+<script src="{{"js/jquery.validate.min.js" | absURL}}"></script>
+<script src="{{"js/jquery.form.js" | absURL}}"></script>
+<script src="{{"js/jquery.nav.js" | absURL}}"></script>
+<script src="{{"js/wow.min.js" | absURL}}"></script>
+<script src="{{"js/all.min.js" | absURL}}"></script>
+<script src="{{"js/main.js" | absURL}}"></script>
+
+</body>
+
+</html>
